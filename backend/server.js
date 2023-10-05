@@ -7,7 +7,7 @@ const server = express();
 
 const port = process.env.PORT_SERVER || 8080;
 const networkInterfaces = os.networkInterfaces();
-const ipv4Address = networkInterfaces["Ethernet"][0].address; // Substitua "Ethernet" pelo nome da sua interface de rede
+const ipv4Address = networkInterfaces["eth0"][0].address; // Substitua "Ethernet" pelo nome da sua interface de rede
 
 // Middleware para processar dados JSON
 server.use(cors());
