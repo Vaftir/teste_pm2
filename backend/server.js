@@ -53,5 +53,5 @@ server.get("/", (req, res) => {
 
 // Inicie o servidor
 server.listen(port, () => {
-  console.log(`Servidor em execução na porta ${port} `);
+  console.log(`Servidor em execução na porta ${ipv4Address} ${port} `);
 });
